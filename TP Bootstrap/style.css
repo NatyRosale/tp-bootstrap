@@ -1,0 +1,5 @@
+
+#opaco{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
