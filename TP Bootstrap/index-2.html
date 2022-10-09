@@ -11,21 +11,35 @@
     
     </head>
     <body>
-        <div class="container-fluid text-light bg-dark">
-            <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
-              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img src= "codoacodo.png" width="50" height="32"><use xlink:href="#bootstrap"/></img>
-                <span class="fs-4 text-light bg-dark">Conf Bs As</span>
-              </a>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <img src="codoacodo.png" alt="" srcset="" width="150">
+              <span class="fs-4 text-light bg-dark">Conf Bs As</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white m-2 fs-4" aria-current="page" href="#">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white m-2 fs-4" aria-current="page" href="#">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white m-2 fs-4" aria-current="page" href="#">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white m-2 fs-4" aria-current="page" href="#">Conviertete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-success m-2 fs-4" aria-current="page" href="#">Comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         
-              <ul class="nav col 8 justify-content-center align-items-center fs-5">
-                <li class="nav-item"><a href="#" class="nav-link">La conferencia</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Los oradores</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">El lugar y la fecha</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Conviértete en orador</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Comprar tickets</a></li>
-              </ul>
-            </header>
 
             <div class="carousel-inner">
                 <picture id="opaco">
@@ -35,8 +49,8 @@
                         <h1>Conf Bs As</h1>
                         <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
                         </p>
-                        <p><a class="btn btn-primary bg-transparent border-2 border-light" href="#">Quiero ser orador</a></p>
-                        <p><a class="btn btn-lg btn-success" href="#">Comprar Tickets</a></p>
+                        <button type="button" class="btn btn-outline-secondary">Quiero ser orador</a></button>
+                        <button type="button" class="btn btn-success">Comprar Tickets</a></button>
                 </div>
               </div>
             </div>
@@ -51,7 +65,7 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img src="./steve.jpg" width="100%" height="auto"  role="img"><title> Placeholder </title><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <img src="./steve.jpg" width="100%" height="auto"  role="img" class="imgcard"><title> Placeholder </title><rect width="100%" height="100%" fill="#55595c"/></img>
                     <div class="d-flex justify-content-between align-items-center"></div>
                         <div class="btn-group">
                         <span type="button" class="badge text-bg-warning">JavaScript</span>
@@ -65,7 +79,7 @@
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img src="./bill.jpg" width="100%" height="auto"  role="img" ><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <img src="./bill.jpg" width="100%" height="auto"  role="img" class="imgcard"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></img>
                     <div class="d-flex justify-content-between align-items-center"></div>
                         <div class="btn-group">
                         <span type="button" class="badge text-bg-warning">JavaScript</span>
@@ -80,7 +94,7 @@
                 
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img src="./ada.jpeg" width="100%" height="auto"  role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <img src="./ada.jpeg" width="100%" height="auto"  role="img" class="imgcard"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></img>
                     <div class="d-flex justify-content-between align-items-center"></div>
                     <div class="btn-group">
                         <span type="button" class="badge text-bg-secondary">Negocios</span>
@@ -97,9 +111,9 @@
         </div>
 
         
-        <div class="row g-0">
-            <img src="./honolulu.jpg" alt="" class="col-6 img-fluid-sm g-0 border border-0 border-light">    
-            <div class="col-6 bg-dark text-light border border-1 border-light p-3">   
+        <div class="row g-0 flex-colum flex-md-row">
+            <img src="./honolulu.jpg" alt="" class="col-12 col-md-6 img-fluid-sm g-0 border border-0 border-light">    
+            <div class="col-12 col-md-6 bg-dark text-light border border-1 border-light p-3">   
               <h3>Bs As - Ocutbre</h3>
               <p class="">Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la cuidad (aproximadamente 600km<sup>2</sup> de superficie)</p>
               <button class="btn btn-primary bg-transparent border-2 border-light">Conocé más</button>
