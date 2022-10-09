@@ -1,0 +1,14 @@
+
+#opaco{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.nav-link{
+    color: rgb(248, 251, 252);
+}
+.imgcard{
+    height: 24rem;
+}
+.navbar-toggler-icon{
+    background-color: rgb(255, 255, 255);
+}
